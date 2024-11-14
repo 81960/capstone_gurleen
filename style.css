@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+}
+
+nav {
+    background-color: #86c7b7;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+h1 {
+    color: #86c7b7;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #86c7b7;
+    font-size: 28px;
+    margin: 20px 0;
+}
+
+p {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #86c7b7;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #65a895;
+}
+
+.screen {
+    text-align: center;
+    padding: 20px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#home, #quiz, #feedback {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.answers {
+    list-style-type: none;
+    padding: 0;
+}
+
+.answers li {
+    margin: 10px 0;
+}
+
+.answers li button {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #e0f0ee;
+    color: #333;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+}
+
+.answers li button:hover {
+    background-color: #d3e7e3;
+}
+
+#next-question {
+    margin-top: 20px;
+    background-color: #65a895;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+
+#quiz-difficulty-form {
+    margin-bottom: 20px;
+}
+
+#quiz-difficulty-form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#quiz-difficulty-form div {
+    margin-bottom: 10px;
+}
+
+#quiz-difficulty-form input[type="radio"] {
+    margin-right: 5px;
+}
