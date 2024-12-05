@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <section id="home" class="screen">
+        <div class="container">
+            <h1>Welcome to the Quiz App!</h1>
+            <p>Test your knowledge and track your progress.</p>
+            <form id="difficulty-form">
+                <label>Select Difficulty Level</label>
+                <div>
+                    <input type="radio" name="difficulty" id="easy" value="Easy" checked> Easy
+                    <input type="radio" name="difficulty" id="medium" value="Medium"> Medium
+                    <input type="radio" name="difficulty" id="hard" value="Hard"> Hard
+                </div>
+                <button type="button" id="start-quiz-btn" class="btn">Start Quiz</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section id="quiz" class="screen hidden">
+        <div class="container">
+            <h1>Quiz</h1>
+
+            <form id="quiz-difficulty-form">
+                <label>Change Difficulty Level</label>
+                <div>
+                    <input type="radio" name="quiz-difficulty" id="easy-quiz" value="Easy"> Easy
+                    <input type="radio" name="quiz-difficulty" id="medium-quiz" value="Medium"> Medium
+                    <input type="radio" name="quiz-difficulty" id="hard-quiz" value="Hard"> Hard
+                </div>
+            </form>
+            <div id="question-container"></div>
+            <p id="result-message"></p>
+            <ul class="answers" id="answers-list"></ul>
+            <button id="next-question" class="btn" style="display: none;">Next Question</button>
+            <p>Question <span id="current-question-number">0</span> of 10</p>
+            <p>Correct: <span id="correct-count">0</span> | Incorrect: <span id="incorrect-count">0</span></p>
+            <button id="reset-stats" class="btn">Reset Stats</button>
+        </div>
+    </section>
+
+
+    <section id="feedback" class="screen hidden">
+        <div class="container">
+            <h1>Quiz Summary</h1>
+            <p>Your final score is:</p>
+            <h2 id="final-score"></h2>
+            <button class="btn" onclick="startAgain()">Start Again</button>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
